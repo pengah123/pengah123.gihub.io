@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="我的博客搭建过程, H.Peng">
+    <meta name="keywords" content="解决github连不上的问题, H.Peng">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>我的博客搭建过程 | H.Peng</title>
+    <title>解决github连不上的问题 | H.Peng</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -306,12 +306,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">我的博客搭建过程</h1>
+                    <h1 class="description center-align post-title">解决github连不上的问题</h1>
                 </div>
             </div>
         </div>
@@ -440,7 +440,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-15
+                    2020-03-18
                 </div>
                 
 
@@ -457,18 +457,20 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前期工作"><a href="#前期工作" class="headerlink" title="前期工作"></a>前期工作</h2><h3 id="参见视频：CodeSheep——程序猿如何搭建一个属于自己的个人博客"><a href="#参见视频：CodeSheep——程序猿如何搭建一个属于自己的个人博客" class="headerlink" title="参见视频：CodeSheep——程序猿如何搭建一个属于自己的个人博客"></a>参见视频：<a href="https://www.bilibili.com/video/av37128014" target="_blank">CodeSheep——程序猿如何搭建一个属于自己的个人博客</a></h3><p>他的GitHub账号：hangsonwang99<br>动态博客<br>实例——GitHub账号——Hsite<br>分为前台和后端，后端可用java、python、PHP、c#，动态的意思就是后台可以管理<br>自己动手/成熟的框架（wordpress.org，基于PHP）<br>静态博客<br>框架：hexo.io(node.js)，Jekylllrb.com，gohugo.org(go语言)，vuepress.vuejs.org/zh(基于vue.js)，solo.b3log.org（基于Java），<br>纯js展示界面，无登陆</p>
-<h3 id="参见视频：CodeSheep——手把手教你从0开始搭建自己的个人博客-hexo"><a href="#参见视频：CodeSheep——手把手教你从0开始搭建自己的个人博客-hexo" class="headerlink" title="参见视频：CodeSheep——手把手教你从0开始搭建自己的个人博客-hexo"></a>参见视频：<a href="https://www.bilibili.com/video/av44544186?from=search&seid=17960554175678125013" target="_blank">CodeSheep——手把手教你从0开始搭建自己的个人博客-hexo</a></h3><p>先搭建起来到远端，再考虑内容、美观等</p>
-<ol>
-<li>安装node.js，nodes.org，安装完查看node ,npm版本，还要装git</li>
-<li>用npm安装cnpm,淘宝镜像——主要是为了增加速度</li>
-<li>用cnpm安装hexo，安装完验证</li>
-<li>Hexo初始化</li>
-<li>部署成功，在localhosst上，可以写文章了！</li>
-<li>部署到GitHub上，创建一个空仓库，仓库名命名为 owner.github.io（必须这么命名），安装一个插件 camp install —save hexo-deployed-git,修改config，deploy——repo:仓库地址（这一步很关键）</li>
-<li>更换博客hexo主题(github上下载)，clone到themes，然后修改config，改完之后还要deploy到GitHub</li>
-</ol>
-<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>部署到GitHub失败，偶尔成功，偶尔失败。。。。<br>显示错误原因是无法连接到GitHub.com，我的浏览器也上不去GitHub，可能是被墙了，于是转为在coding上部署<br>coding上部署存在一个问题，我们先创建仓库，然后把本地博客推到coding仓库，然后再创建静态网站，百度上说的Pages页面没有找到，直接创建的静态网站生成的域名不是我的仓库名，但是看着也还行，coding是国内的代码管理器，也是基于Git的，但是部署速度要快很多<br>到此为止，网站部署成功，开始看代码改代码写博客</p>
+                <p>前面因为github连不上我一直用的vpn上的github，这也导致了我的博客部署到github失败，没办法只能部署到coding。</p>
+<p>这几天我的vpn到期了，github上不去真的还挺不方便的。<br>之前我一直以为github是被墙了，然后我发现别人的都能用，手机端也是可以用的，难不成真的是我的电脑的问题？？？<br>还能屏蔽单个网站？？？这超出我的认知了</p>
+<h4 id="方法一：百度上大部分是一些改host文件的，具体操作如下："><a href="#方法一：百度上大部分是一些改host文件的，具体操作如下：" class="headerlink" title="方法一：百度上大部分是一些改host文件的，具体操作如下："></a>方法一：百度上大部分是一些改host文件的，具体操作如下：</h4><p>第一步：找到host文件：C:\Windows\System32\drivers\etc，复制粘贴到桌面（host文件不能直接修改保存需要拷贝出来改完再放回去）；</p>
+<p>第二步：到这个网站——<a href="http://ipaddress.com/ip-lookup/" target="_blank">http://ipaddress.com/ip-lookup/</a>，<br>查找这两个网址的IP地址并复制到host文件下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">140.82.114.3 github.com</span><br><span class="line">199.232.69.194 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
+<p>第三步：别忘了再把host文件从桌面复制粘贴回到etc文件下。</p>
+<p>总之，这个方法我试了很久，都没成功</p>
+<h4 id="方法二：改电脑的DNS"><a href="#方法二：改电脑的DNS" class="headerlink" title="方法二：改电脑的DNS"></a>方法二：改电脑的DNS</h4><p>第一步：右键电脑的设置<br><img src="/img/1.png" alt=""></p>
+<p>第二步：打开网络和Internet设置<br><img src="/img/2.png" alt=""></p>
+<p>第三步：选择“更改适配器”<br><img src="/img/3.png" alt=""></p>
+<p>第四步：右键你的网络，选择属性<br><img src="/img/4.png" alt=""></p>
+<p>第五步：选中“iPv4协议”，选择属性<br><img src="/img/5.png" alt=""></p>
+<p>第六步：更改DNS服务器的值<br><img src="/img/6.png" alt=""><br>可靠的DNS服务供应商：<br>               V2EX DNS  ：199.91.73.222    178.79.131.110<br>               阿里DNS   ：223.5.5.5        223.6.6.6<br>               Google DNS：8.8.8.8          8.8.4.4<br>               OpenDNS   ：208.67.222.222   208.67.220.220<br>原文链接：<a href="https://blog.csdn.net/fatsimple/article/details/52043625" target="_blank" rel="noopener">https://blog.csdn.net/fatsimple/article/details/52043625</a></p>
+<p>挨个试这些DNS，直到成功为止。</p>
 
             </div>
             <hr/>
@@ -494,7 +496,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://600xj1.coding-pages.com/2020/03/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">http://600xj1.coding-pages.com/2020/03/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="http://600xj1.coding-pages.com/2020/03/18/%E8%A7%A3%E5%86%B3github%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%9A%84%E9%97%AE%E9%A2%98/">http://600xj1.coding-pages.com/2020/03/18/%E8%A7%A3%E5%86%B3github%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%9A%84%E9%97%AE%E9%A2%98/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -695,9 +697,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/03/18/%E8%A7%A3%E5%86%B3github%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%9A%84%E9%97%AE%E9%A2%98/">
                     <div class="card-image">
@@ -716,9 +719,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -727,6 +730,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -737,19 +741,19 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/15/hello-world/">
+                <a href="/2020/03/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="我的博客搭建过程">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">我的博客搭建过程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            前期工作参见视频：CodeSheep——程序猿如何搭建一个属于自己的个人博客他的GitHub账号：hangsonwang99动态博客实例——GitHub账号——Hsite分为前台和后端，后端可用java、python、PHP、c#，动态的意
                         
                     </div>
                     <div class="publish-info">
