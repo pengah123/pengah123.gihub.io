@@ -742,6 +742,14 @@ header .go-back i {
     padding: 20px 40px;
 }
 
+.aplayer-list-title {
+    color: #666;
+}
+
+.aplayer-title {
+    color: #009688
+}
+
 @media only screen and (min-width: 1418px) {
     .recommend {
         margin-top: 20px;
